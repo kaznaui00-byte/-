@@ -1,0 +1,19 @@
+
+    
+};
+
+
+
+kalshmmari90@gmail.com
+
+
+$user = \App\Models\User::where('email', 'kalshmmari90@gmail.com
+')->first();
+
+
+\$2y\$12\$Bd5zxYDIG3IKTQNp2KsLFeOuI5N81osy8waq70Cw8TeV
+sDyR9W0oa
+
+
+$user->password = \Illuminate\Support\Facades\Hash::make('123123123');
+$user->save();
