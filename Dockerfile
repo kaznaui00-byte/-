@@ -15,7 +15,6 @@ COPY . .
 RUN composer dump-autoload --no-dev --optimize --no-scripts
 
 FROM php:8.3-apache
-&& rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y \
     libpq-dev libzip-dev libicu-dev libpng-dev \
     libjpeg62-turbo-dev libfreetype6-dev libonig-dev \
