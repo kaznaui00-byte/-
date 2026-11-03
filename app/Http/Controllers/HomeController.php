@@ -6,6 +6,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return 'سرد يعمل';
+        return view('welcome', [
+            'page' => 'Home'
+        ]);
     }
 }
