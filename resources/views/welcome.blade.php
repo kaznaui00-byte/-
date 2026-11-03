@@ -31,7 +31,15 @@
         letter-spacing: 3px;
     }
 
-     {
+     {.sard-hero {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 35px 0;
+    border-bottom: 1px solid #dedbd3;
+}
         min-height: auto;
 display: flex;
 flex-direction: column;
@@ -108,7 +116,7 @@ border-bottom: 1px solid #dedbd3;
 
     .sard-section {
         padding: 75px 0;
-        border-bottom: 1px solid #de.sard-herodbd3;
+        border-bottom: 1px solid #dedbd3;
     }
 
     .sard-section-head {
@@ -270,8 +278,6 @@ border-bottom: 1px solid #dedbd3;
 
 {{-- الاقتباسات --}}
 <section class="sard-section">
-        </section>
-
         {{-- الاقتباسات --}}
         <section class="sard-section">
             <div class="sard-section-head">
