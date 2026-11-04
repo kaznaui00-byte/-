@@ -21,10 +21,7 @@ use Illuminate\Support\Str;
 // HOME PAGE - PUBLIC BROWSING
 // ==========================================
 
-Route::get('/', [
-    \App\Http\Controllers\HomeController::class,
-    'index'
-])->name('home');
+Route::get('/', fn () => 'Sard is working')->name('home');
 
 // ==========================================
 // SIGN UP
