@@ -9,6 +9,7 @@ use Illuminate\Validation\Rule;
 
 use App\Models\User;
 use App\Http\Controllers\QuoteController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PodcastController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\Admin\SignLanguageController;
@@ -21,8 +22,7 @@ use Illuminate\Support\Str;
 // HOME PAGE - PUBLIC BROWSING
 // ==========================================
 
-Route::get('/', fn () => 'Sard is working')->name('home');
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
 // ==========================================
 // SIGN UP
 // ==========================================
